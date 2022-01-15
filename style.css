@@ -6,6 +6,7 @@ font family
 style sheets start
 ----------------- */
 *{ 
+    box-sizing: border-box;
     margin:0;
     padding:0;
 }
@@ -24,7 +25,7 @@ header section start
 }
 .section-info{
     background-color: #FFFF;
-    width: 70vw;
+    width: 80vw;
     display: flex;
     justify-content: space-between;
     padding: 4em;
@@ -52,7 +53,6 @@ top section start
 }
 .influancer-journey-left{
     width: 50%;
-    margin-right: 2em;
 }
 h1{
     font-size: 52px;
@@ -127,13 +127,26 @@ main section start
 /* ------------------
 main section end
 ------------------ */
+/* -----------------------
+skills section start 
+------------------ */
+.influancer-vedios{
+    display: flex;
+    justify-content: space-evenly;
+}
+.influancer-vedios .text{
+   padding-right: 4em;
+}
+.influancer-vedios .text h2{
+    padding-bottom: 20px;
+}
 /* -------------------
 footer start
  ---------------- */
  .footer-item{
      background-color: #010b2e;
      text-align: center;
-     padding: 50px;
+     padding-top:4em;
      color: #FFFFFF;
      
  }
@@ -146,7 +159,7 @@ footer end
   /* ---------------------
   media query for mobile
    ------------------ */
-  @media only screen and (max-width:688px) {
+  @media only screen and (max-width:680px) {
     .section-info{
         width: 100%;
         text-align: center;
@@ -167,17 +180,15 @@ footer end
     .items{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 20px;
+        grid-row-gap: 2em;
     }
 }
 /* ---------------------
   media query for tab
    ------------------ */
-  @media only screen and (min-width:689px) and (max-width: 992px){
+  @media only screen and (min-width:680px) and (max-width: 992px){
     .section-info{
-        width: 100%;
-        text-align: center;
-       
+        width: 100%;   
     }
     .influancer-journey{
         display: flex;
@@ -196,3 +207,6 @@ footer end
         grid-template-columns: repeat(2, 1fr);
     }
 }
+ /* -----------------
+ media queries end
+  ------------------ */
